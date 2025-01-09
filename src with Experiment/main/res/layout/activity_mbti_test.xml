@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#29b15b"
+    tools:context=".MBTI_Test">
+
+    <!--LinearLayout: contain title, 4 questions & its answers, button to display result-->
+    <LinearLayout
+        android:id="@+id/question_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--TextView: display "title"-->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Myers–Briggs Type Indicator (MBTI) Test"
+            android:textColor="#f1e61a"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!--TextView: display "Instruction"-->
+        <TextView
+            android:id="@+id/instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="First answer 4 below questions by selecting the option that suit you the most, then you can find your personality type according to Myers-Briggs"
+            android:textColor="#b40929"
+            android:textSize="17sp"
+            android:textStyle="italic" />
+
+        <!--QUESTION 1, ILLUSTRATION IMAGE, 2 ANSWERS-->
+        <!--TextView: display "question1"-->
+        <TextView
+            android:id="@+id/question1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="Question 1: You are totally exhausted because your week was endless and less than great. How are you going to spend your weekend?"
+            android:textColor="#FFFFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!--ImageView: display illustration image for question1-->
+        <ImageView
+            android:id="@+id/illustrationImage1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="Illustration Image1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/illustration_image1" />
+
+        <!--RadioGroup: contains 2 answer options for question 1-->
+        <RadioGroup
+            android:id="@+id/answerGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="vertical">
+
+            <!--RadioButton: "E" type (Extraversion)-->
+            <RadioButton
+                android:id="@+id/answerE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="E: I’ll call my friends to ask about their plans. I heard that a new restaurant opened / a nice comedy is playing in the cinemas / there are big discounts at the paintball club. We should all go out together."
+                android:textColor="#0808ec"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <!--RadioButton: "I" type (Introversion)-->
+            <RadioButton
+                android:id="@+id/answerI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="I: I’ll switch on the 'Don’t disturb' mode on my phone and stay at home. I’ll watch a new episode of my favorite TV show, do a puzzle, and take a long bath with a book."
+                android:textColor="#0808ec"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+        </RadioGroup>
+
+        <!--QUESTION 2, ILLUSTRATION IMAGE, 2 ANSWERS-->
+        <!--TextView: display "question1"-->
+        <TextView
+            android:id="@+id/question2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="Question 2: Which of these 2 descriptions suits you more?"
+            android:textColor="#FFFFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!--ImageView: display illustration image for question2-->
+        <ImageView
+            android:id="@+id/illustrationImage2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="Illustration Image2"
+            android:scaleType="fitCenter"
+            android:src="@drawable/illustration_image2" />
+
+        <!--RadioGroup: contains 2 answer options for question 2-->
+        <RadioGroup
+            android:id="@+id/answerGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="vertical">
+
+            <!--RadioButton: "S" type (Sensing)-->
+            <RadioButton
+                android:id="@+id/answerS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="S: The most important thing for me is what’s happening here and now. I assess real situations and pay attention to details."
+                android:textColor="#0808ec"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <!--RadioButton: "N" type (Intuition)-->
+            <RadioButton
+                android:id="@+id/answerN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="N: Facts are boring. I love to dream and play over upcoming events in my mind. I rely more on intuition than information."
+                android:textColor="#0808ec"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+        </RadioGroup>
+
+        <!--QUESTION 3, ILLUSTRATION IMAGE, 2 ANSWERS-->
+        <!--TextView: display "question3"-->
+        <TextView
+            android:id="@+id/question3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="Question 3: A competitor of your current employer is trying to entice you. You have doubts because the salary is much higher there, but the staff here is great. Moreover, the head of your department hinted that he will recommend you to the bosses when he retires. How are you going to make a decision?"
+            android:textColor="#FFFFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!--ImageView: display illustration image for question3-->
+        <ImageView
+            android:id="@+id/illustrationImage3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="Illustration Image3"
+            android:scaleType="fitCenter"
+            android:src="@drawable/illustration_image3" />
+
+        <!--RadioGroup: contains 2 answer options for question 3-->
+        <RadioGroup
+            android:id="@+id/answerGroup3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="vertical">
+
+            <!--RadioButton: "T" type (Thinking)-->
+            <RadioButton
+                android:id="@+id/answerT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="T: I’ll learn all the available information about the competitor, ask my HR manager for advice, and draw a chart with all the pros and cons. In such cases, it’s important to weigh up all the arguments and assess the situation with a cold mind."
+                android:textColor="#0808ec"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <!--RadioButton: "F" type (Feeling)-->
+            <RadioButton
+                android:id="@+id/answerF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="F: I’ll listen to my feelings. I always try to follow my heart."
+                android:textColor="#0808ec"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+        </RadioGroup>
+
+        <!--QUESTION 4, ILLUSTRATION IMAGE, 2 ANSWERS-->
+        <!--TextView: display "question4"-->
+        <TextView
+            android:id="@+id/question4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="Question 4: Only 2 weeks are left before your close friends’ wedding. How are the preparations going?"
+            android:textColor="#FFFFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!--ImageView: display illustration image for question4-->
+        <ImageView
+            android:id="@+id/illustrationImage4"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="Illustration Image4"
+            android:scaleType="fitCenter"
+            android:src="@drawable/illustration_image4" />
+
+        <!--RadioGroup: contains 2 answer options for question 4-->
+        <RadioGroup
+            android:id="@+id/answerGroup4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="vertical">
+
+            <!--RadioButton: "J" type (Judging)-->
+            <RadioButton
+                android:id="@+id/answerJ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="J: One month ago, I chose the saxophonist who will play a medley of our school songs / collected the couple’s photo love story / composed a poem / pressed my suit / made appointments with the stylist and makeup master. I prefer to be fully armed."
+                android:textColor="#0808ec"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <!--RadioButton: "P" type (Perception)-->
+            <RadioButton
+                android:id="@+id/answerP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="P: Why prepare? I’ll be having fun and enjoying myself at the party. I’ll improvise my wedding speech. The best things happen spontaneously."
+                android:textColor="#0808ec"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+        </RadioGroup>
+
+        <!--Button "View Result" -->
+        <Button
+            android:id="@+id/viewResult"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="#583389"
+            android:gravity="center"
+            android:padding="10sp"
+            android:text="View Result"
+            android:textColor="#efd514"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
