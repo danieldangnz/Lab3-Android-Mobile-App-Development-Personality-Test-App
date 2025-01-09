@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Personality Test App</string>
+
+    <!--Declare String variable: "girl_profile" -->
+    <string name="girl_profile">You\’re an optimist who always shines with positive energy. You\’re interested in many things around you and always strive to try something new.\n
+\nSometimes you can be impulsive and may do spur-of-the-moment things. Try to plan ahead and it will help you save time and energy.\n
+\nYou like to help other people. You\’re a generous person and know how to share happiness, for example, through volunteer work.\n
+\nYou\’re a strong and determined person. Despite any circumstance, you stand firm on your feet and move forward bravely. Keep up the good work! Don\’t give up! You will definitely get a well-deserved award.\n
+\nYou\’re one of those people who don\’t keep their problems inside and can talk openly about them with others, and you tend to find a solution together.\n
+\nYou evolve and grow as an individual. Constructive criticism, advice, and support of your family and friends help you in this process.
+</string>
+
+    <!--Declare String variable: "man_profile"-->
+    <string name="man_profile">You\’re a calm, honest, and faithful individual. Many people think you are reliable and trustworthy.\n
+\nYou\’re a natural leader. You are able to analyse different viewpoints to give a clear decision and take the initiative, leading the team in the right direction.\n
+\nSetting a goal, you thoroughly plan every step of the way and slowly but surely make them one by one. This approach keeps you away from impulsive and ill-conceived decisions.\n
+\nYour scrupulosity makes you a perfectionist. We have to admit that this can exhaust you more than you think it does. Try to relax more often and let things take their course. The taste of freedom will help you to relax and put your mind and body in order.\n
+</string>
+
+</resources>

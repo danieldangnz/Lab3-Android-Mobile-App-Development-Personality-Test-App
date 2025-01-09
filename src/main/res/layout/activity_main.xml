@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#29b15b"
+    tools:context=".MainActivity">
+
+    <!--TextView: display "title"-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Picture test reveals your true personality"
+        android:textColor="#f1e61a"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!--TextView: display "Instruction"-->
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Look at the picture below and notice what you see first (picture will appear only during 10 seconds)"
+        android:textColor="#b40929"
+        android:textSize="17sp"
+        android:textStyle="normal" />
+
+    <!--Button "View Image" -->
+    <Button
+        android:id="@+id/viewImage"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instruction"
+        android:layout_centerHorizontal="true"
+        android:background="#053b05"
+        android:gravity="center"
+        android:padding="10sp"
+        android:text="View Image"
+        android:textColor="#efd514"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!--ImageView: display "test" image-->
+    <ImageView
+        android:id="@+id/testImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/viewImage"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="Test Image"
+        android:scaleType="fitCenter"
+        android:src="@drawable/test_image" />
+
+    <!--TextView: display "question"-->
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/testImage"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="What did you see first?"
+        android:textColor="#FFFFFFFF"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <!--RadioGroup: contains 2 answer options: girl's profile and man's profile-->
+    <RadioGroup
+        android:id="@+id/answerGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <!--RadioButton: girl's profile option-->
+        <RadioButton
+            android:id="@+id/girl_profile_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:text="a girl's profile"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!--RadioButton: man's profile option-->
+        <RadioButton
+            android:id="@+id/man_profile_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:text="a man's profile"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <!--Button "View Result" -->
+    <Button
+        android:id="@+id/viewResult"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answerGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#583389"
+        android:gravity="center"
+        android:padding="10sp"
+        android:text="View Result"
+        android:textColor="#efd514"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>
